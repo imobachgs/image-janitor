@@ -214,7 +214,7 @@ fn main() {
     }
 
     // Use real configuration files from the data directory.
-    let config_paths = vec!["data/module.list", "data/module.list.extra"];
+    let config_paths = vec!["data/module.list"];
 
     println!("\nStarting Benchmarks...");
     println!("======================");

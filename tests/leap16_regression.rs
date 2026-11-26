@@ -240,7 +240,7 @@ fn deleted_drivers(module_dir: &Path, work_root: &Path) -> Vec<String> {
     let before: HashSet<String> = collect_files(&copy_dir).into_iter().collect();
 
     let runner = SystemCommandRunner;
-    let config_paths = vec!["data/module.list", "data/module.list.extra"];
+    let config_paths = vec!["data/module.list"];
     driver::cleanup_drivers(&config_paths, &copy_dir, true, true, &runner)
         .expect("cleanup_drivers failed");
 

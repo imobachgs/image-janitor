@@ -33,7 +33,7 @@ enum Commands {
         module_dir: PathBuf,
 
         /// Paths to module list configuration files.
-        #[arg(long, default_value = "module.list,module.list.extra")]
+        #[arg(long, default_value = "module.list")]
         config_files: String,
     },
     /// Cleans up unused firmware.
